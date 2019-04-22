@@ -1,0 +1,25 @@
+{
+  "name": "mattermost-mobile-e2e",
+  "version": "1.0.0",
+  "description": "UI Test Automation for Mattermost Mobile RN",
+  "main": "src/index.js",
+  "author": "Mattermost, Inc.",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "appium": "1.12.1",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.16.0",
+    "eslint-config-mattermost": "github:mattermost/eslint-config-mattermost",
+    "eslint-plugin-header": "3.0.0",
+    "tap-spec": "5.0.0",
+    "tape": "4.10.1",
+    "wd": "1.11.2"
+  },
+  "scripts": {
+    "e2e-android": "./script/e2e-android.sh",
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern node_modules --quiet .",
+    "lint:fix": "eslint --ignore-path .gitignore --ignore-pattern node_modules --quiet . --fix",
+    "test": "npm run e2e-android",
+    "test:dummy": "echo \"Dummy test successful\" && exit 0"
+  }
+}

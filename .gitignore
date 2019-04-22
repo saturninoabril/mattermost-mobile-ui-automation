@@ -1,0 +1,9 @@
+node_modules
+
+# RN builds
+*.apk
+*.ipa
+
+# Appium
+appium.log
+appium.pid
